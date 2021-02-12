@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .pgContainer{
+            margin: 0px auto;
+            /* width: 970px;
+            height:auto; */
+        }
+        .pgBox{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            border-style: solid;
+            border-color: black;
+            border-width: 3px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Playground</h1>
+    <div class="pgContainer">
+        {% for i in range(0, pgNum) %}
+        <div class="pgBox"></div>
+        {% endfor %}
+    </div>
+</body>
+</html>
